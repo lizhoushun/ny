@@ -40,6 +40,7 @@
     <div id="yhBtn" style="position:fixed;top:4;left:4;width:100%;height:100%;z-index:888;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#FFD306 ; font-size:30px    ">
         <p>💥快点击我💥</p>
         <img style="width:90px;margin-bottom:50px " src="files/boom.png">
+	    <img style="width:90px;margin-bottom:50px " src="files/2023.png">
     </div>
 
     <div style="height: 0; width: 0; position: absolute; visibility: hidden;">
@@ -265,21 +266,6 @@
 }
 time()
 </script>
-<script>
-    window.onload=function () {
-        let oA=document.querySelector("#a1");
-        let timer=null;
-        function autoPlay() {
-            if (oA.paused) { //如果暂停
-                oA.paused=false;//设为不暂停
-                oA.volume=0.5;//设置自动播放的初始音量
-                oA.play();//调用play（）方法播放
-            }else {//如果未暂停
-                clearInterval(timer);//清掉定时器
-            }
-        }
-        timer=setInterval(autoPlay,1);//用定时器触发autoplay自动播放
-    }
 倒计时
 <!--tip:此处为挂载的网页,源码中引用过他人的代码-->
 </script>
