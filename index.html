@@ -86,8 +86,8 @@
         </div>
         <div class="stage-container remove">
             <div class="page_two hide">
-                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br><br>彩蛋:点击屏幕任意地方即可放烟花<span id="copyright"></span></p></div>
-                <div class="type_words" id="contents" style="font-size:1rem;line-height:1rem;"></div>
+                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br><br>彩蛋:点屏幕放烟花<br><br>快去分享给你的朋友吧❤️❤️❤️╰(*°▽°*)╯<br><br></span></span>祝愿：走过一年收获一年，把握2022<br></span>愿2023走的更远，愿你掌舵新方向，<br></span>把握新力量，端正新目标，稳重新梦想，<br></span>愿2023年的用心创出新成绩，努力拼搏新梦想，<br></span>愿你的2023无限辉煌！！！💰<span id="copyright"></span></p></div>
+                <div class="type_words" id="contents" style="font-size:2rem;line-height:2rem;"></div>
             </div>
             <div class="canvas-container">
                 <canvas id="trails-canvas"></canvas>
@@ -244,7 +244,7 @@
     var todayHour = today.getHours()
     var todayMinute = today.getMinutes()
     var todaySecond = today.getSeconds()
-    var t1 = Date.UTC(newYear, 1, 1, 0, 0, 00)
+    var t1 = Date.UTC(newYear, 1, 22, 0, 0, 00)
     var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
     var diff = t1 - t2
     var diff2 = t2-t1
@@ -260,7 +260,7 @@
     var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
     var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
         minutes) / seconds)
-     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是1月1日,祝你"+todayYear+"新年快乐！"}}
+     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是1月22日,祝你"+todayYear+"新年快乐！"}}
      else{document.getElementById("text1").innerHTML =  "提前祝你"+newYear+"新年快乐"}
      document.getElementById("time").innerHTML =  diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒"+newYear
 }
